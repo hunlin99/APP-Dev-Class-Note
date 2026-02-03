@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  output: 'export', // 必填：啟動靜態導出
+  basePath: '/Class-Note',
+  assetPrefix: '/Class-Note/',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
